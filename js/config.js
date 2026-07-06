@@ -1,0 +1,23 @@
+// Shared constants and static data used across modules.
+
+export const GITHUB_USERNAME = 'ReanuxM';
+
+// Respected by particles.js and hero.js to skip/short-circuit continuous animation.
+export const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+export const FEATURED_PROJECTS = [
+  {name:'NLP Text Classification System',desc:'Developed and trained a deep learning NLP model for multi-class text classification using BERT and LSTM architectures. Achieved 96% accuracy on test data. Deployed the trained model as a production-ready Flask REST API with real-time inference.',tags:['BERT','LSTM','Flask API','NLP'],type:'featured'},
+  {name:'Sentiment Analysis System',desc:'Built a sentiment classifier for customer reviews using NLP preprocessing (tokenization, TF-IDF, stemming) and supervised ML models. Compared Naive Bayes, SVM, and Logistic Regression performance with comprehensive evaluation metrics.',tags:['NLP','Scikit-learn','TF-IDF','SVM'],type:'featured'},
+  {name:'House Price Prediction',desc:'Implemented a multiple linear regression model for housing price prediction using scikit-learn. Performed extensive EDA, feature engineering, multicollinearity analysis, and model evaluation with MAE, RMSE, and R-squared metrics.',tags:['Regression','Pandas','Scikit-learn'],url:'https://github.com/ReanuxM/Machine-Learning-with-Python/blob/main/Machine%20Learning%20with%20Python/Lab2/Multiple%20Linear%20Regression.ipynb',type:'featured'},
+  {name:'Spam Detection System',desc:'Built a text classification model to detect spam messages using supervised machine learning and NLP feature engineering. Implemented Bag of Words, TF-IDF vectorization, and evaluated with precision, recall, and F1-score.',tags:['Classification','NLP','Feature Engineering'],type:'featured'},
+  {name:'Simple Linear Regression',desc:'Predictive modeling using Simple Linear Regression. Analyzed relationships between variables, visualized data trends, and evaluated accuracy with MAE, MSE, and R-squared metrics on real-world datasets.',tags:['Python','Scikit-learn','Matplotlib'],url:'https://github.com/ReanuxM/Machine-Learning-with-Python/blob/main/Machine%20Learning%20with%20Python/Lab1/simple_linear_regression.ipynb',type:'featured'},
+  {name:'Logistic Regression Classifier',desc:'Binary classification model using Logistic Regression with data preprocessing, feature scaling, and model training. Evaluated with confusion matrix, precision, recall, F1-score, and ROC-AUC curve analysis.',tags:['Classification','Scikit-learn','Python'],url:'https://github.com/ReanuxM/Machine-Learning-with-Python/blob/main/Machine%20Learning%20with%20Python/Lab3_Logistic_Regression/Logistic_Regression.ipynb',type:'featured'},
+  {name:'Customer Churn Prediction',desc:'End-to-end ML pipeline predicting customer churn using ensemble methods (Random Forest, XGBoost). Feature importance analysis, SMOTE for class imbalance, and hyperparameter tuning with GridSearchCV.',tags:['XGBoost','Random Forest','SMOTE'],type:'featured'},
+  {name:'Image Classification with CNN',desc:'Convolutional Neural Network for image classification. Built custom CNN architecture with convolutional, pooling, and dropout layers. Trained with data augmentation and achieved strong generalization on unseen data.',tags:['TensorFlow','CNN','Keras'],type:'featured'},
+  {name:'Recommendation Engine',desc:'Collaborative filtering recommendation system using matrix factorization and cosine similarity. Built content-based and hybrid approaches for personalized item recommendations.',tags:['Python','NumPy','Collaborative Filtering'],type:'featured'},
+  {name:'Data Visualization Dashboard',desc:'Interactive data analysis dashboard with dynamic charts, filters, and statistical summaries. Built with Python visualization libraries for exploratory data analysis on real-world datasets.',tags:['Matplotlib','Seaborn','Plotly','EDA'],type:'featured'},
+  {name:'Full-Stack Portfolio Website',desc:'Modern responsive portfolio website with interactive particle animations, dynamic GitHub integration, and smooth scroll-triggered transitions. Built with vanilla JS, CSS animations, and GitHub Pages deployment.',tags:['JavaScript','HTML5','CSS3','APIs'],type:'featured'},
+  {name:'IT Network Monitoring Tool',desc:'Automated network monitoring script tracking uptime, latency, and bandwidth across infrastructure. Real-time alerts and logging for system administration and troubleshooting.',tags:['Python','Linux','Networking'],type:'featured'},
+];
+
+export const langColors = {JavaScript:'#f1e05a',TypeScript:'#3178c6',Python:'#3572A5',Java:'#b07219',HTML:'#e34c26',CSS:'#563d7c','Jupyter Notebook':'#DA5B0B',Shell:'#89e051',C:'#555','C++':'#f34b7d'};
