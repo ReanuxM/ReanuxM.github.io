@@ -1,36 +1,31 @@
-# Hi, I'm Mohammed Mahrous 👋
+# reanuxm.github.io — Personal Portfolio
 
-**Computer Scientist | Machine Learning & AI Engineer**
+My personal portfolio website, showcasing my ML/AI projects and skills.
 
-I build practical ML solutions — from NLP text classification systems to computer vision models — with a focus on taking projects from notebook to deployment.
+**🔗 Live site:** [reanuxm.github.io](https://reanuxm.github.io)
 
-## 🔭 What I'm Working On
+## ✨ Features
 
-- Deploying my NLP Text Classification system (BERT + LSTM + Flask) as a live demo
-- Building consistent, incremental programming habits — small commits, every week
-- Actively seeking ML/AI engineering opportunities
+- Interactive dark/amber design
+- Project showcase: NLP Text Classification (BERT + LSTM + Flask), Sentiment Analysis, House Price Prediction, Spam Detection, CNN Image Classifier, and more
+- Responsive layout for desktop and mobile
+- Contact links: GitHub, LinkedIn, Email, WhatsApp
 
-## 🧠 Featured Projects
+## 🛠️ Built With
 
-| Project | Description | Stack |
-|---------|-------------|-------|
-| **NLP Text Classification** | Graduation project: text classification with NLP preprocessing (tokenization, stemming, TF-IDF) and supervised models | BERT, LSTM, Flask, Scikit-learn |
-| **Sentiment Analysis** | Classifying text sentiment using ML pipelines | Python, Scikit-learn |
-| **CNN Image Classifier** | Image classification with convolutional neural networks | TensorFlow / PyTorch |
-| **Spam Detection** | Supervised spam filtering | Python, Scikit-learn |
-| **House Price Prediction** | Regression modeling on housing data | Python, Scikit-learn |
-| **ML with Python Labs** | Regression & classification fundamentals, fully documented | [View repo →](https://github.com/ReanuxM/Machine-Learning-with-Python) |
+- Vanilla **HTML**, **CSS**, and **JavaScript** — no frameworks, no build step
+- Hosted on **GitHub Pages**
 
-🌐 See them all at **[reanuxm.github.io](https://reanuxm.github.io)**
+## 🚀 Run Locally
 
-## 🛠️ Skills
+```bash
+git clone https://github.com/ReanuxM/ReanuxM.github.io.git
+cd ReanuxM.github.io
+# Open index.html in your browser — that's it
+```
 
-**ML/AI:** Deep Learning · NLP · Computer Vision · Scikit-learn · TensorFlow · PyTorch
-**Programming:** Python · JavaScript · HTML/CSS · MATLAB
-**Other:** Web Development (Flask) · IT Infrastructure & Support · Git
+## 👤 Author
 
-## 📫 Reach Me
+**Mohammed Mahrous** — Computer Scientist | ML/AI Engineer
 
-- 📧 Mohammed.a.Mahrous@outlook.com
-- 🌐 [reanuxm.github.io](https://reanuxm.github.io)
-- 💼 LinkedIn: https://www.linkedin.com/in/mohammed-a-mahrous
+📧 Mohammed.a.Mahrous@outlook.com
