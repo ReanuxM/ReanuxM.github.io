@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mohammed Mahrous — AI/ML Engineer</title>
 <meta name="description" content="Mohammed Mahrous — AI/ML Engineer specializing in Deep Learning, NLP, Computer Vision, and Full-Stack Web Development.">
+<meta name="theme-color" content="#07060d">
 <link rel="canonical" href="https://reanuxm.github.io/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
@@ -33,13 +34,19 @@
     "https://www.linkedin.com/in/mohammed-a-mahrous",
     "https://wa.link/co2jyg"
   ],
-  "knowsAbout": ["Machine Learning", "Deep Learning", "NLP", "Computer Vision", "Full-Stack Web Development"]
+  "knowsAbout": ["Machine Learning", "Deep Learning", "NLP", "Computer Vision", "Full-Stack Web Development"],
+  "worksFor": {"@type": "Organization", "name": "Al-Muna Kareem Hotel"},
+  "hasCredential": [
+    {"@type": "EducationalOccupationalCredential", "name": "IBM AI Engineering Professional Certificate", "recognizedBy": {"@type": "Organization", "name": "IBM"}},
+    {"@type": "EducationalOccupationalCredential", "name": "Fundamentals of Artificial Intelligence", "recognizedBy": {"@type": "Organization", "name": "Saudi Data & AI Authority (SDAIA)"}},
+    {"@type": "EducationalOccupationalCredential", "name": "Introduction to Data Science", "recognizedBy": {"@type": "Organization", "name": "Cisco Networking Academy"}}
+  ]
 }
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -48,19 +55,24 @@
 
 <div class="scroll-progress" id="scrollProgress"></div>
 
+<!-- BUILD:NAV_START -->
 <nav id="navbar">
-  <a href="#" class="nav-logo">&lt;MM/&gt;</a>
+  <a href="#hero" class="nav-logo">&lt;MM/&gt;</a>
   <ul class="nav-links" id="navLinks">
+    <li><a href="#experience">Experience</a></li>
     <li><a href="#about">About</a></li>
-    <li><a href="#expertise">Skills</a></li>
-    <li><a href="#stack">Tech Stack</a></li>
+    <li><a href="#certifications">Certifications</a></li>
     <li><a href="#projects">Projects</a></li>
+    <li><a href="#expertise">Skills</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
+  <a class="nav-resume-btn" href="resume.pdf" download>Resume</a>
   <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
     <span></span><span></span><span></span>
   </button>
 </nav>
+
+<!-- BUILD:NAV_END -->
 
 <main id="main">
 <!-- HERO -->
@@ -79,10 +91,51 @@
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
         View My Work
       </a>
+      <a href="resume.pdf" download class="btn btn-ghost">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M5 21h14"/></svg>
+        Resume
+      </a>
       <a href="#contact" class="btn btn-ghost">Get In Touch</a>
     </div>
   </div>
   <div class="scroll-hint" id="scrollHint"><span>Scroll</span><div class="scroll-line" aria-hidden="true"></div></div>
+</section>
+
+<!-- GRADUATION PROJECT SPOTLIGHT -->
+<section id="spotlight">
+  <div class="section-container">
+<!-- BUILD:SPOTLIGHT_START -->
+    <div class="spotlight-card reveal">
+      <span class="spotlight-badge">🎓 Graduation Project</span>
+      <h2 class="spotlight-name">NLP Text Classification System</h2>
+      <p class="spotlight-tagline">Multi-class text classification with BERT + LSTM, deployed as a real-time Flask API.</p>
+      <div class="spotlight-results"><span class="spotlight-result">96% accuracy on the test set</span><span class="spotlight-result">Real-time inference via a deployed Flask REST API</span></div>
+      <div class="spotlight-tags"><span class="project-tag">BERT</span><span class="project-tag">LSTM</span><span class="project-tag">Flask API</span><span class="project-tag">NLP</span></div>
+      <a href="projects/nlp-text-classification.html" class="btn btn-primary spotlight-cta">Read Case Study →</a>
+    </div>
+<!-- BUILD:SPOTLIGHT_END -->
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-container">
+    <div class="reveal">
+      <span class="section-eyebrow">Experience</span>
+      <h2 class="section-title">Professional <em>Experience</em></h2>
+    </div>
+    <div class="experience-list">
+<!-- BUILD:EXPERIENCE_START -->
+      <div class="experience-card reveal reveal-d1">
+        <div class="experience-head">
+          <h3 class="experience-title">IT Support Specialist <span>· Al-Muna Kareem Hotel</span></h3>
+          <span class="experience-dates">Dec 2025 – Present</span>
+        </div>
+        <p class="experience-desc">Deliver day-to-day IT support for hotel operations, resolving hardware, software, network, and user issues. Maintain IT equipment and systems, assist employees with technical requests, and ensure reliable operation of essential business services.</p>
+      </div>
+<!-- BUILD:EXPERIENCE_END -->
+    </div>
+  </div>
 </section>
 
 <!-- ABOUT -->
@@ -124,6 +177,177 @@
           <span class="stat-label">AI/ML Specializations</span>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="section-container">
+    <div class="reveal">
+      <span class="section-eyebrow">Certifications</span>
+      <h2 class="section-title">Verified <em>Credentials</em></h2>
+      <p class="section-desc">Formal training backing up the hands-on project work.</p>
+    </div>
+    <div class="cert-grid">
+<!-- BUILD:CERTIFICATIONS_START -->
+      <div class="cert-card reveal reveal-d1">
+        <span class="cert-icon" aria-hidden="true">🎓</span>
+        <h3 class="cert-name">IBM AI Engineering Professional Certificate</h3>
+        <p class="cert-issuer">IBM</p>
+        <div class="cert-meta">
+          <span class="cert-year">Year</span>
+          
+        </div>
+      </div>
+      <div class="cert-card reveal reveal-d2">
+        <span class="cert-icon" aria-hidden="true">🎓</span>
+        <h3 class="cert-name">Fundamentals of Artificial Intelligence</h3>
+        <p class="cert-issuer">Saudi Data & AI Authority (SDAIA)</p>
+        <div class="cert-meta">
+          <span class="cert-year">Year</span>
+          
+        </div>
+      </div>
+      <div class="cert-card reveal reveal-d3">
+        <span class="cert-icon" aria-hidden="true">🎓</span>
+        <h3 class="cert-name">Introduction to Data Science</h3>
+        <p class="cert-issuer">Cisco Networking Academy</p>
+        <div class="cert-meta">
+          <span class="cert-year">Year</span>
+          
+        </div>
+      </div>
+<!-- BUILD:CERTIFICATIONS_END -->
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-container">
+    <div class="reveal">
+      <span class="section-eyebrow">Case Studies</span>
+      <h2 class="section-title">Deep <em>Dives</em></h2>
+      <p class="section-desc">Problem, approach, and results for the projects that best show how I work.</p>
+    </div>
+    <div class="case-studies-grid">
+<!-- BUILD:CASE_STUDIES_START -->
+      <div class="case-study-card reveal reveal-d1">
+        <span class="case-study-grad-badge">🎓 Graduation Project</span>
+        <h3 class="case-study-name">NLP Text Classification System</h3>
+        <p class="case-study-tagline">Multi-class text classification with BERT + LSTM, deployed as a real-time Flask API.</p>
+        <div class="case-study-tags"><span class="project-tag">BERT</span><span class="project-tag">LSTM</span><span class="project-tag">Flask API</span><span class="project-tag">NLP</span></div>
+        <a href="projects/nlp-text-classification.html" class="case-study-link">Read case study →</a>
+      </div>
+      <div class="case-study-card reveal reveal-d2">
+        
+        <h3 class="case-study-name">Customer Churn Prediction</h3>
+        <p class="case-study-tagline">End-to-end churn prediction pipeline with ensemble models and class-imbalance handling.</p>
+        <div class="case-study-tags"><span class="project-tag">XGBoost</span><span class="project-tag">Random Forest</span><span class="project-tag">SMOTE</span><span class="project-tag">GridSearchCV</span></div>
+        <a href="projects/customer-churn-prediction.html" class="case-study-link">Read case study →</a>
+      </div>
+      <div class="case-study-card reveal reveal-d3">
+        
+        <h3 class="case-study-name">Image Classification with CNN</h3>
+        <p class="case-study-tagline">Custom CNN architecture for image classification, trained with data augmentation.</p>
+        <div class="case-study-tags"><span class="project-tag">TensorFlow</span><span class="project-tag">CNN</span><span class="project-tag">Keras</span></div>
+        <a href="projects/image-classification-cnn.html" class="case-study-link">Read case study →</a>
+      </div>
+      <div class="case-study-card reveal reveal-d4">
+        
+        <h3 class="case-study-name">Sentiment Analysis System</h3>
+        <p class="case-study-tagline">Sentiment classifier for customer reviews, benchmarking three supervised models.</p>
+        <div class="case-study-tags"><span class="project-tag">NLP</span><span class="project-tag">Scikit-learn</span><span class="project-tag">TF-IDF</span><span class="project-tag">SVM</span></div>
+        <a href="projects/sentiment-analysis-system.html" class="case-study-link">Read case study →</a>
+      </div>
+      <div class="case-study-card reveal reveal-d5">
+        
+        <h3 class="case-study-name">Recommendation Engine</h3>
+        <p class="case-study-tagline">Collaborative filtering recommender combining content-based and hybrid approaches.</p>
+        <div class="case-study-tags"><span class="project-tag">Python</span><span class="project-tag">NumPy</span><span class="project-tag">Collaborative Filtering</span></div>
+        <a href="projects/recommendation-engine.html" class="case-study-link">Read case study →</a>
+      </div>
+<!-- BUILD:CASE_STUDIES_END -->
+    </div>
+
+    <div class="reveal" style="margin-top:5rem">
+      <span class="section-eyebrow">More Projects</span>
+      <h2 class="section-title">Additional <em>Work</em></h2>
+    </div>
+    <div class="projects-tabs reveal reveal-d1">
+      <button class="tab-btn active" data-tab="other">Selected Projects</button>
+      <button class="tab-btn" data-tab="github">From GitHub</button>
+    </div>
+    <div class="projects-grid" id="otherProjectsGrid">
+<!-- BUILD:OTHER_PROJECTS_START -->
+      <div class="project-card reveal">
+        <div class="project-header">
+          <span class="project-icon" aria-hidden="true">🚀</span>
+          <div class="project-links"><a href="https://github.com/ReanuxM/Machine-Learning-with-Python/blob/main/Machine%20Learning%20with%20Python/Lab2/Multiple%20Linear%20Regression.ipynb" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></div>
+        </div>
+        <h3 class="project-name">House Price Prediction</h3>
+        <p class="project-desc">Implemented a multiple linear regression model for housing price prediction using scikit-learn. Performed extensive EDA, feature engineering, multicollinearity analysis, and model evaluation with MAE, RMSE, and R-squared metrics.</p>
+        <div class="project-meta"><span class="project-tag">Regression</span><span class="project-tag">Pandas</span><span class="project-tag">Scikit-learn</span></div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-header">
+          <span class="project-icon" aria-hidden="true">🚀</span>
+          <div class="project-links"></div>
+        </div>
+        <h3 class="project-name">Spam Detection System</h3>
+        <p class="project-desc">Built a text classification model to detect spam messages using supervised machine learning and NLP feature engineering. Implemented Bag of Words, TF-IDF vectorization, and evaluated with precision, recall, and F1-score.</p>
+        <div class="project-meta"><span class="project-tag">Classification</span><span class="project-tag">NLP</span><span class="project-tag">Feature Engineering</span></div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-header">
+          <span class="project-icon" aria-hidden="true">🚀</span>
+          <div class="project-links"><a href="https://github.com/ReanuxM/Machine-Learning-with-Python/blob/main/Machine%20Learning%20with%20Python/Lab1/simple_linear_regression.ipynb" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></div>
+        </div>
+        <h3 class="project-name">Simple Linear Regression</h3>
+        <p class="project-desc">Predictive modeling using Simple Linear Regression. Analyzed relationships between variables, visualized data trends, and evaluated accuracy with MAE, MSE, and R-squared metrics on real-world datasets.</p>
+        <div class="project-meta"><span class="project-tag">Python</span><span class="project-tag">Scikit-learn</span><span class="project-tag">Matplotlib</span></div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-header">
+          <span class="project-icon" aria-hidden="true">🚀</span>
+          <div class="project-links"><a href="https://github.com/ReanuxM/Machine-Learning-with-Python/blob/main/Machine%20Learning%20with%20Python/Lab3_Logistic_Regression/Logistic_Regression.ipynb" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></div>
+        </div>
+        <h3 class="project-name">Logistic Regression Classifier</h3>
+        <p class="project-desc">Binary classification model using Logistic Regression with data preprocessing, feature scaling, and model training. Evaluated with confusion matrix, precision, recall, F1-score, and ROC-AUC curve analysis.</p>
+        <div class="project-meta"><span class="project-tag">Classification</span><span class="project-tag">Scikit-learn</span><span class="project-tag">Python</span></div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-header">
+          <span class="project-icon" aria-hidden="true">🚀</span>
+          <div class="project-links"></div>
+        </div>
+        <h3 class="project-name">Data Visualization Dashboard</h3>
+        <p class="project-desc">Interactive data analysis dashboard with dynamic charts, filters, and statistical summaries. Built with Python visualization libraries for exploratory data analysis on real-world datasets.</p>
+        <div class="project-meta"><span class="project-tag">Matplotlib</span><span class="project-tag">Seaborn</span><span class="project-tag">Plotly</span><span class="project-tag">EDA</span></div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-header">
+          <span class="project-icon" aria-hidden="true">🚀</span>
+          <div class="project-links"></div>
+        </div>
+        <h3 class="project-name">Full-Stack Portfolio Website</h3>
+        <p class="project-desc">Modern responsive portfolio website with interactive particle animations, dynamic GitHub integration, and smooth scroll-triggered transitions. Built with vanilla JS, CSS animations, and GitHub Pages deployment.</p>
+        <div class="project-meta"><span class="project-tag">JavaScript</span><span class="project-tag">HTML5</span><span class="project-tag">CSS3</span><span class="project-tag">APIs</span></div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-header">
+          <span class="project-icon" aria-hidden="true">🚀</span>
+          <div class="project-links"></div>
+        </div>
+        <h3 class="project-name">IT Network Monitoring Tool</h3>
+        <p class="project-desc">Automated network monitoring script tracking uptime, latency, and bandwidth across infrastructure. Real-time alerts and logging for system administration and troubleshooting.</p>
+        <div class="project-meta"><span class="project-tag">Python</span><span class="project-tag">Linux</span><span class="project-tag">Networking</span></div>
+      </div>
+<!-- BUILD:OTHER_PROJECTS_END -->
+    </div>
+    <div class="projects-grid" id="githubProjectsGrid" hidden>
+      <div class="projects-loading"><div class="spinner"></div>Loading projects...</div>
     </div>
   </div>
 </section>
@@ -292,25 +516,6 @@
   </div>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="section-container">
-    <div class="reveal">
-      <span class="section-eyebrow">Portfolio</span>
-      <h2 class="section-title">Selected <em>Work</em></h2>
-      <p class="section-desc">Real projects covering machine learning, deep learning, NLP, and web development — each one a real challenge solved.</p>
-    </div>
-    <div class="projects-tabs reveal reveal-d1">
-      <button class="tab-btn active" data-tab="all">All</button>
-      <button class="tab-btn" data-tab="featured">Featured</button>
-      <button class="tab-btn" data-tab="github">From GitHub</button>
-    </div>
-    <div class="projects-grid" id="projectsGrid">
-      <div class="projects-loading"><div class="spinner"></div>Loading projects...</div>
-    </div>
-  </div>
-</section>
-
 <!-- CONTACT -->
 <section id="contact" class="contact-section">
   <div class="section-container">
@@ -342,7 +547,9 @@
 </section>
 </main>
 
+<!-- BUILD:FOOTER_START -->
 <footer><p>Built by <strong>Mohammed Mahrous</strong> · &copy; <span id="year"></span></p></footer>
+<!-- BUILD:FOOTER_END -->
 
 <script type="module" src="js/main.js"></script>
 </body>

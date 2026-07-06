@@ -1,0 +1,29 @@
+/* Case-study article pages — layout only, tokens/nav/footer/cards come from main.css */
+
+.case-study-hero{padding:9rem 2.5rem 4rem;max-width:800px;margin:0 auto}
+.case-study-back{display:inline-flex;align-items:center;gap:.4rem;font-size:.82rem;color:var(--text-dim);margin-bottom:2rem}
+.case-study-back:hover{color:var(--amber)}
+.case-study-hero .spotlight-badge{margin-bottom:1.2rem}
+.case-study-hero h1{font-family:var(--font-display);font-size:clamp(1.8rem,5vw,2.6rem);font-weight:800;letter-spacing:-.02em;margin-bottom:.8rem}
+.case-study-hero .case-study-tagline{font-size:1.05rem;color:var(--text-dim);max-width:640px;margin-bottom:1.5rem}
+.case-study-hero .case-study-tags{margin-bottom:0}
+
+.case-study-body{max-width:800px;margin:0 auto;padding:0 2.5rem 6rem}
+.case-study-section{margin-bottom:3.5rem}
+.case-study-section h2{font-family:var(--font-display);font-size:1.4rem;font-weight:700;margin-bottom:1rem}
+.case-study-section h2 em{font-style:normal;color:var(--amber)}
+.case-study-section p{color:var(--text-dim);font-size:1rem;line-height:1.85}
+
+.case-study-results{list-style:none;display:flex;flex-direction:column;gap:.8rem}
+.case-study-results li{display:flex;align-items:flex-start;gap:.7rem;color:var(--text-dim);font-size:.95rem;line-height:1.6;background:var(--depth);border:1px solid var(--border);border-radius:10px;padding:.9rem 1.1rem}
+.case-study-results li::before{content:'✓';color:var(--amber);font-weight:700;flex-shrink:0}
+
+.case-study-cta{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;text-align:center;flex-direction:column;align-items:center;padding:3rem 2.5rem;margin:0 2.5rem;background:var(--depth);border:1px solid var(--border);border-radius:18px}
+.case-study-cta p{color:var(--text-dim);max-width:480px}
+.case-study-cta-links{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center}
+
+@media(max-width:880px){
+  .case-study-hero{padding:8rem 1.2rem 3rem}
+  .case-study-body{padding:0 1.2rem 4rem}
+  .case-study-cta{margin:0 1.2rem;padding:2rem 1.2rem}
+}

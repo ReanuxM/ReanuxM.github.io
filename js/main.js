@@ -7,5 +7,4 @@ import './nav.js';
 import './reveal.js';
 import './counters.js';
 import './projects.js';
-
-document.getElementById('year').textContent = new Date().getFullYear();
+import './year.js';
