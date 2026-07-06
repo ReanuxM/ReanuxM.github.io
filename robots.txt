@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://reanuxm.github.io/sitemap.xml
