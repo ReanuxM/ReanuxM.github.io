@@ -145,6 +145,11 @@ section{padding:7rem 2.5rem}
 .project-lang{display:flex;align-items:center;gap:.3rem;font-size:.72rem;color:var(--text-dim)}
 .lang-dot{width:8px;height:8px;border-radius:50%;display:inline-block}
 .project-stat{display:flex;align-items:center;gap:.2rem;font-size:.72rem;color:var(--text-dim)}
+.project-dates{font-family:var(--font-mono);font-size:.7rem;color:var(--text-muted);margin-top:.2rem}
+.project-card .case-study-link{display:inline-flex;margin-top:.9rem}
+
+/* SECTION-END CTA (e.g. "View All Projects") */
+.section-cta{text-align:center;margin-top:2.5rem}
 .projects-loading{text-align:center;padding:3rem;color:var(--text-dim);font-family:var(--font-mono);font-size:.82rem}
 .spinner{width:28px;height:28px;border:2px solid var(--border);border-top-color:var(--amber);border-radius:50%;animation:spin 1s linear infinite;margin:0 auto 1rem}
 @keyframes spin{to{transform:rotate(360deg)}}

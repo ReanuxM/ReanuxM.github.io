@@ -8,6 +8,8 @@
 const fs = require('fs');
 const path = require('path');
 
+const {getLatestRepos} = require('./lib/github-repos.js');
+
 const ROOT = __dirname;
 const SITE_URL = 'https://reanuxm.github.io';
 
@@ -15,6 +17,16 @@ const caseStudies = require('./content/case-studies.js');
 const otherProjects = require('./content/other-projects.js');
 const experience = require('./content/experience.js');
 const certifications = require('./content/certifications.js');
+
+// Duplicated (intentionally, ~10 lines) from the browser-side copy that used
+// to live in js/config.js — that copy is gone now that GitHub rendering is
+// build-time only, and ES modules can't reliably `import` JSON across
+// browsers yet, so a shared file isn't worth the complexity for this size.
+const langColors = {JavaScript: '#f1e05a', TypeScript: '#3178c6', Python: '#3572A5', Java: '#b07219', HTML: '#e34c26', CSS: '#563d7c', 'Jupyter Notebook': '#DA5B0B', Shell: '#89e051', C: '#555', 'C++': '#f34b7d'};
+
+function formatDate(iso) {
+  return new Date(iso).toLocaleDateString('en-US', {month: 'short', year: 'numeric'});
+}
 
 const navPartial = fs.readFileSync(path.join(ROOT, 'partials/nav.html'), 'utf8');
 const footerPartial = fs.readFileSync(path.join(ROOT, 'partials/footer.html'), 'utf8');
@@ -101,10 +113,36 @@ function renderOtherProjects() {
       </div>`).join('\n');
 }
 
+// ---- Latest Projects (live GitHub data, fetched at build time — see lib/github-repos.js) ----
+function renderLatestProjects(repos) {
+  if (!repos.length) {
+    return '      <p class="projects-loading">Latest projects temporarily unavailable.</p>';
+  }
+  return repos.map((r, i) => {
+    const langMeta = r.language
+      ? `<span class="project-lang"><span class="lang-dot" aria-hidden="true" style="background:${langColors[r.language] || '#888'}"></span>${r.language}</span>`
+      : '';
+    const topicsRow = r.topics.length
+      ? `\n        <div class="project-meta">${renderTags(r.topics)}</div>`
+      : '';
+    return `      <div class="project-card reveal reveal-d${Math.min(i + 1, 5)}">
+        <div class="project-header">
+          <span class="project-icon" aria-hidden="true">📂</span>
+        </div>
+        <h3 class="project-name">${r.name}</h3>
+        <p class="project-desc">${r.description}</p>
+        <div class="project-meta">${langMeta}<span class="project-stat">★ ${r.stars}</span><span class="project-stat">⑂ ${r.forks}</span></div>${topicsRow}
+        <p class="project-dates">Created ${formatDate(r.createdAt)} · Updated ${formatDate(r.updatedAt)}</p>
+        <a href="${r.url}" target="_blank" rel="noopener" class="case-study-link" aria-label="View ${r.name} repository on GitHub">View Repository →</a>
+      </div>`;
+  }).join('\n');
+}
+
 // ---- Build index.html ----
-function buildIndex() {
+async function buildIndex() {
   const file = path.join(ROOT, 'index.html');
   let html = fs.readFileSync(file, 'utf8');
+  const latestRepos = await getLatestRepos();
   html = injectBetween(html, 'NAV', renderNav('', ''));
   html = injectBetween(html, 'FOOTER', footerPartial.trim());
   html = injectBetween(html, 'SPOTLIGHT', renderSpotlight());
@@ -112,6 +150,7 @@ function buildIndex() {
   html = injectBetween(html, 'CERTIFICATIONS', renderCertifications());
   html = injectBetween(html, 'CASE_STUDIES', renderCaseStudiesGrid());
   html = injectBetween(html, 'OTHER_PROJECTS', renderOtherProjects());
+  html = injectBetween(html, 'LATEST_PROJECTS', renderLatestProjects(latestRepos));
   fs.writeFileSync(file, html);
   console.log('  index.html updated');
 }
@@ -241,7 +280,9 @@ ${urls.map(u => `  <url>
   console.log('  sitemap.xml updated');
 }
 
-buildIndex();
-buildCaseStudyPages();
-buildSitemap();
-console.log('Build complete.');
+(async () => {
+  await buildIndex();
+  buildCaseStudyPages();
+  buildSitemap();
+  console.log('Build complete.');
+})();

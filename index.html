@@ -275,10 +275,6 @@
       <span class="section-eyebrow">More Projects</span>
       <h2 class="section-title">Additional <em>Work</em></h2>
     </div>
-    <div class="projects-tabs reveal reveal-d1">
-      <button class="tab-btn active" data-tab="other">Selected Projects</button>
-      <button class="tab-btn" data-tab="github">From GitHub</button>
-    </div>
     <div class="projects-grid" id="otherProjectsGrid">
 <!-- BUILD:OTHER_PROJECTS_START -->
       <div class="project-card reveal">
@@ -346,8 +342,33 @@
       </div>
 <!-- BUILD:OTHER_PROJECTS_END -->
     </div>
-    <div class="projects-grid" id="githubProjectsGrid" hidden>
-      <div class="projects-loading"><div class="spinner"></div>Loading projects...</div>
+  </div>
+</section>
+
+<!-- LATEST PROJECTS (auto-synced from GitHub at build time) -->
+<section id="latest-projects" aria-labelledby="latest-projects-title">
+  <div class="section-container">
+    <div class="reveal">
+      <span class="section-eyebrow">GitHub</span>
+      <h2 class="section-title" id="latest-projects-title">Latest <em>Projects</em></h2>
+      <p class="section-desc">Automatically synchronized with my GitHub repositories.</p>
+    </div>
+    <div class="projects-grid">
+<!-- BUILD:LATEST_PROJECTS_START -->
+      <div class="project-card reveal reveal-d1">
+        <div class="project-header">
+          <span class="project-icon" aria-hidden="true">📂</span>
+        </div>
+        <h3 class="project-name">Machine-Learning-with-Python</h3>
+        <p class="project-desc">Labs of the IBM Coursera class: Machine Learning with Python</p>
+        <div class="project-meta"><span class="project-lang"><span class="lang-dot" aria-hidden="true" style="background:#DA5B0B"></span>Jupyter Notebook</span><span class="project-stat">★ 0</span><span class="project-stat">⑂ 0</span></div>
+        <p class="project-dates">Created May 2026 · Updated Jul 2026</p>
+        <a href="https://github.com/ReanuxM/Machine-Learning-with-Python" target="_blank" rel="noopener" class="case-study-link" aria-label="View Machine-Learning-with-Python repository on GitHub">View Repository →</a>
+      </div>
+<!-- BUILD:LATEST_PROJECTS_END -->
+    </div>
+    <div class="section-cta reveal">
+      <a href="https://github.com/ReanuxM?tab=repositories" target="_blank" rel="noopener" class="btn btn-ghost">View All Projects</a>
     </div>
   </div>
 </section>

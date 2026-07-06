@@ -6,5 +6,4 @@ import './hero.js';
 import './nav.js';
 import './reveal.js';
 import './counters.js';
-import './projects.js';
 import './year.js';
