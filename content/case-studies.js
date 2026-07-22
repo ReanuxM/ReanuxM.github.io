@@ -30,6 +30,7 @@ module.exports = [
       'Hyperparameters tuned systematically with GridSearchCV',
     ],
     stack: ['XGBoost', 'Random Forest', 'SMOTE', 'GridSearchCV'],
+    repoUrl: 'https://github.com/ReanuxM/machine-learning-projects/tree/main/customer-churn-prediction',
   },
   {
     slug: 'image-classification-cnn',
@@ -42,6 +43,7 @@ module.exports = [
       'Achieved strong generalization on unseen data',
     ],
     stack: ['TensorFlow', 'CNN', 'Keras'],
+    repoUrl: 'https://github.com/ReanuxM/machine-learning-projects/tree/main/image-classification-cnn',
   },
   {
     slug: 'sentiment-analysis-system',
@@ -67,6 +69,7 @@ module.exports = [
       'Delivered both collaborative-filtering and hybrid recommendation approaches',
     ],
     stack: ['Python', 'NumPy', 'Collaborative Filtering'],
+    repoUrl: 'https://github.com/ReanuxM/machine-learning-projects/tree/main/recommendation-engine',
   },
   {
     slug: 'credit-card-fraud-detection',
