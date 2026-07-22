@@ -15,6 +15,7 @@ module.exports = [
       'Real-time inference via a deployed Flask REST API',
     ],
     stack: ['BERT', 'LSTM', 'Flask API', 'NLP'],
+    repoUrl: 'https://github.com/ReanuxM/nlp-sentiment-classification',
   },
   {
     slug: 'customer-churn-prediction',

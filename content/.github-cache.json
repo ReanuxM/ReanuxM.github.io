@@ -1,13 +1,24 @@
 {
-  "fetchedAt": "2026-07-22T02:45:09.442Z",
+  "fetchedAt": "2026-07-22T03:15:27.335Z",
   "repos": [
+    {
+      "name": "nlp-sentiment-classification",
+      "description": "NLP sentiment classification: benchmark of text representations (TF-IDF -> BERT) + a Flask app that classifies and retrains Keras models.",
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "createdAt": "2026-07-22T03:14:36Z",
+      "updatedAt": "2026-07-22T03:14:56Z",
+      "stars": 0,
+      "forks": 0,
+      "url": "https://github.com/ReanuxM/nlp-sentiment-classification"
+    },
     {
       "name": "Machine-Learning-with-Python",
       "description": "Labs of the IBM Coursera class: Machine Learning with Python",
       "language": "Jupyter Notebook",
       "topics": [],
       "createdAt": "2026-05-17T19:07:19Z",
-      "updatedAt": "2026-07-06T18:03:33Z",
+      "updatedAt": "2026-07-22T03:07:32Z",
       "stars": 0,
       "forks": 0,
       "url": "https://github.com/ReanuxM/Machine-Learning-with-Python"
