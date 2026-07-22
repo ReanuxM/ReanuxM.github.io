@@ -67,4 +67,19 @@ module.exports = [
     ],
     stack: ['Python', 'NumPy', 'Collaborative Filtering'],
   },
+  {
+    slug: 'credit-card-fraud-detection',
+    name: 'Credit Card Fraud Detection',
+    gradProject: false,
+    tagline: 'Fraud detection on a highly imbalanced dataset, benchmarking an SVM against a Decision Tree with ROC-AUC.',
+    problem: "Fraud is rare — often well under 1% of transactions — so a model that labels everything \"legitimate\" still scores high accuracy while catching zero fraud. Detecting the rare positive class needs imbalance-aware training and a metric that the majority class can't game.",
+    approach: 'Built a full pipeline on PCA-anonymized transaction features: standardized and L1-normalized the inputs, corrected the class imbalance with per-sample weights (compute_sample_weight) instead of naive resampling, and trained a DecisionTreeClassifier and a LinearSVC head-to-head. Evaluated on ROC-AUC rather than accuracy, then studied how keeping only the most correlated features shifts each model differently.',
+    results: [
+      'Benchmarked Decision Tree vs LinearSVC on ROC-AUC — the metric that stays honest under extreme class imbalance',
+      'Handled imbalance with sample weighting rather than resampling',
+      'Quantified how top-correlated-feature selection changes each model',
+    ],
+    stack: ['SVM', 'Decision Tree', 'ROC-AUC', 'Imbalanced Data', 'Scikit-learn'],
+    repoUrl: 'https://github.com/ReanuxM/Machine-Learning-with-Python/blob/main/Machine%20Learning%20with%20Python/Lab7_SVM/Credit_Card_Fraud_SVM_vs_DecisionTree.ipynb',
+  },
 ];
