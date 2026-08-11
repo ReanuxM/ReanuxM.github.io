@@ -1,6 +1,17 @@
 {
-  "fetchedAt": "2026-07-22T03:57:51.247Z",
+  "fetchedAt": "2026-08-11T17:11:45.121Z",
   "repos": [
+    {
+      "name": "ibm-ml-course-labs",
+      "description": "Completed & annotated labs from the IBM Machine Learning with Python certificate: classification, tree ensembles, clustering, PCA/t-SNE/UMAP, pipelines & tuning.",
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "createdAt": "2026-08-11T17:10:05Z",
+      "updatedAt": "2026-08-11T17:10:38Z",
+      "stars": 0,
+      "forks": 0,
+      "url": "https://github.com/ReanuxM/ibm-ml-course-labs"
+    },
     {
       "name": "machine-learning-projects",
       "description": "Three end-to-end ML projects: customer churn (XGBoost/SMOTE), image classification (CNN), and a movie recommender (SVD). Fully executed notebooks.",
